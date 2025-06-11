@@ -12,6 +12,7 @@ This type is **required** and may have multiple items.
 Metric    | Type    | Required | Description
 --------- | ------- | -------- | -----------
 name      | string  | yes      | Name of the file.
+path      | string  | no       | Path of the file.
 size      | integer | yes      | Size of the file in bytes.
 created   | integer | yes      | Creation time of the file as unix timestamp in seconds.
 access    | integer | yes      | Last access time of the file as unix timestamp in seconds.

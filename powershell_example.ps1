@@ -1,5 +1,8 @@
 # Powershell example:
 
+# Make sure the `files` collector is assigned to the asset 
+# and the `files` check is enabled before running this script
+
 # Asset ID
 $assetId = 123  # REPLACE WITH YOUR ASSET ID
 

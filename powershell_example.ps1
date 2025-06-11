@@ -1,20 +1,20 @@
 # Powershell example:
 
 # Asset ID
-$assetId = 123
+$assetId = 123  # REPLACE WITH YOUR ASSET ID
 
 # Agent Token
-$token = xxxxxxxxxxxxxxxxxxx
+$token = 'xxxxxxxxxxxxxxxxxxx'  # REPLACE WITH YOUR TOKEN
 
-# File names to check
+# File names to check  # REPLACE WITH LIST OF FILES TO MONITOR
 $fileNames = @(
     "C:\test.txt",
     "C:\other.txt"
 )
 
 # Version and info for the agent (Version must be greater than 0.1.0, info is free format)
-$version = '1.0.0'
-$info = 'Files processed by PowerShell'
+$version = '1.0.0'  # REPLACE WITH YOUR VERSION
+$info = 'Files processed by PowerShell'  # REPLACE WITH YOUR INFO
 
 # InfraSonar Uri for inserting check data
 $uri = 'https://api.infrasonar.com/asset/{0}/collector/files/check/files' -f $assetId

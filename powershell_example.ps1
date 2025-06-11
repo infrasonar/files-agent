@@ -34,6 +34,7 @@ foreach ($fn in $fileNames) {
     $file = Get-Item -Path $fn
     $items += @{
         name = $file.Name
+        path = Split-Path $file -Parent
         size = $file.Length
         access = [int64]([DateTimeOffset]$file.LastAccessTime.ToUniversalTime()).ToUnixTimeSeconds()
         modified = [int64]([DateTimeOffset]$file.LastWriteTime.ToUniversalTime()).ToUnixTimeSeconds()
